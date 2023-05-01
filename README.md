@@ -10,11 +10,11 @@ Resolver provincia y municipio(s) por el código postal:
 
 Separar correctamente las islas de la provincia y presentar solo los municipios de esa isla:
 
-![Municipios por isla](/images/softlinegeodb-resolver.gif)
+![Municipios por isla](/images/softlinegeodb-islas1.gif)
 
 Separación de Autonomía, Provincia, Municipio y conteo de registros por identificadores numéricos:
 
-![Contar registros con IDs numéricos de municipio](/images/softlinegeodb-resolver.gif)
+![Contar registros con IDs numéricos de municipio](/images/softlinegeodb-ccaa-muni.gif)
 
 ## Los datos
 
