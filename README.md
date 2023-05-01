@@ -35,33 +35,41 @@ CNIG - Centro Nacional de Información Geográfica, dirigido por el IGN (Institu
 
 ## Tablas
 La versión de datos _mínima_ consta de 7 tablas:
+
 ![Tablas versión minimalista de softlinegeodb](/images/softlinegeodb_tables2023.png)
 
 La versión de datos extra incluye datos procesados del callejero del INE y las entidades poblacionales adicionales e información geográfica extra del CNIG, todo asociado a los ID de municipio, pero su uso es más raro y ocupan mucho más espacio (son cientos de miles de filas).
+
 ![Tablas extra de la versión full de softlinegeodb](/images/softlinegeodb_tables-extra2023.png)
 
 ### softlinegeodb_ine_ccaa
-Las 19 comunidades autónomas (con las ciudades autónomas de Ceuta y Melilla).
+Las 19 autonomías (por unificar, CCAA o Comunidades Autónomas) que incluyen las ciudades autónomas de Ceuta y Melilla.
 
 ![Estructura de la tabla "ine_ccaa" (Comunidades autónomas españolas)](/images/softlinegeodb_ine_ccaa-struct.png)
 ![Datos de la tabla "ine_ccaa"](/images/softlinegeodb_ine_ccaa-data.png)
 
 ### softlinegeodb_ine_provincias
+Cada provincia pertenece a una Comunidad Autónoma ("ccaa").
+
 ![Estructura de la tabla "ine_provincias" (Provincias españolas)](/images/softlinegeodb_ine_provincias-struct.png)
 
 ### softlinegeodb_ine_islas
-Permite asociar las 11 islas de entidad en España con su provincia
+Permite asociar las 11 islas de entidad en España con su provincia, pues las islas Canarias se agrupan en 2 provincias.
+
 ![Estructura de la tabla "ine_islas" (Islas españolas)](/images/softlinegeodb_ine_islas-struct.png)
 
 ### softlinegeodb_ine_municipios
+Cada municipio tiene el ID de su Comunidad Autónoma ("ccaa") y Provincia. El ID de isla será distinto de 0 si procede.
 
 ![Estructura de la tabla "ine_municipios" (Municipios de España)](/images/softlinegeodb_ine_municipios-struct.png)
 
 ### softlinegeodb_ine_municipios_cp
-De esta tabla podemos extraer a qué municipio pertenece un código postal. Algunos códigos postales están compartidos entre 2 municipios o más.
+De esta tabla podemos extraer a qué municipio(s) pertenece un código postal. Algunos códigos postales están compartidos entre 2 municipios o más y un municipio puede tener uno o varios códigos postales.
+
 ![Estructura de la tabla "ine_municipios_cp" (Códigos postales a municipios españoles)](/images/softlinegeodb_ine_municipios_cp-struct.png)
 
 ### softlinegeodb_ine_municipios_geo
+De aquí obtendremos información geográfica de un ID municipio dado.
 
 ![Estructura de la tabla "ine_municipios_geo" (Información geográfica de los Municipios españoles)](/images/softlinegeodb_ine_municipios_geo-struct.png)
 
