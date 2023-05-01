@@ -1,21 +1,23 @@
 # softlinegeodb
 Conjunto de datos actualizado en **formato base de datos MySQL** de la organización territorial española (comunidades, provincias, municipios, comarcas y otras entidades de población), incluyendo códigos postales e información geográfica, con tablas optimizadas para consultas rápidas, mínimo espacio posible de los registros relacionados y uso fácil.
 
-## Actualización de los datos
-Actualización 2023. Los datos procesados están creados a partir de fuentes oficiales: INE y CNIG (IGN), tan pronto el INE publicó en Internet los datos a enero de 2023 del Callejero de Censo Electoral, exactamente el día 9 de marzo de 2023. El procesado de datos se realizó el 26 de marzo, descargando también entonces los últimos datos del CNIG. Ver más información en el apartado [fuentes de datos](https://github.com/softline-informatica/softlinegeodb#fuentes-de-datos).
+## Demos
+Las siguientes capturas muestran algunas de las cosas interesantes que podemos hacer con esta base de datos:
 
-Esta base de datos procesados se construye desde 2016 y ha sido actualizada en las siguientes fechas, si bien se publica en Github el 1 de mayo de 2023:
-Fecha|Comentario|
-|:---|:---|
-|19 de marzo de 2023|Actualización con datos 2023|
-|1 de enero de 2021|Actualización con datos 2020|
-|15 de junio de 2019|Actualización con datos 2019|
-|27 de mayo de 2018|Actualización con datos 2018, 1ª versión con tabla entidades_geo|
-|20 de agosto de 2017|Actualización con datos 2017, 1ª versión con tabla de países|
-|2 de mayo de 2016|1ª versión de las tablas con datos 2016 del INE y CNIG/IGN|
+Resolver provincia y municipio(s) por el código postal:
 
+![Obtener provincia y municipio por código postal](/images/softlinegeodb-resolver.gif)
+
+Separar correctamente las islas de la provincia y presentar solo los municipios de esa isla:
+
+![Municipios por isla](/images/softlinegeodb-resolver.gif)
+
+Separación de Autonomía, Provincia, Municipio y conteo de registros por identificadores numéricos:
+
+![Contar registros con IDs numéricos de municipio](/images/softlinegeodb-resolver.gif)
 
 ## Los datos
+
 Países|250|
 |:---|:---|
 
@@ -32,8 +34,10 @@ La organización territorial de España parte de 19 demarcaciones autónomas, ca
 |:---|:---|:---|:---|
 ||49 sin islas<br />3 con islas<br />&nbsp;|<br /><br /><br />|0<br />4 islas Baleares (1 provincia)<br />7 islas Canarias (en 2 provincias)|
 
+Ver en la sección 
+
 ## Motivación
-Para poder tomar decisiones basadas en datos, estos deben tener cierta consistencia y ser lo más precisos posible. Cuando hablamos de datos relacionados con la ubicación, resulta asombrosa la cantidad de programas informáticos y servicios que recogen esta información de la peor manera posible en términos de tratamiento y analítica de datos.
+Para poder tomar decisiones basadas en datos, estos deben tener cierta consistencia y ser lo más precisos posible. Cuando hablamos de datos relacionados con la ubicación, resulta asombrosa la cantidad de programas informáticos y servicios que recogen esta información de la peor manera posible en términos de tratamiento y analítica de datos (abominaciones como números inventados para los municipios o directamente el nombre de la "población" o municipio en cada registro, incluso a veces, texto libre, en vez de identificadores).
 
 Para intentar mejorar esta situación, al menos en cuanto a España se refiere, publicamos **softlinegeodb**. Esto es lo que nos motivó a crear esta base de datos:
 
@@ -43,10 +47,26 @@ Para intentar mejorar esta situación, al menos en cuanto a España se refiere, 
 4. Poder presentarle al usuario los municipios de la ISLA a la que se refiere, en lugar de "como hace todo el mundo": darle los municipios de todas las islas mezclados, solo porque son "de la misma provincia"...
 5. Poder relacionar datos del INE y otras fuentes -geográficas o no- a partir de referencias consistentes y compatibles (ID municipio, ID provincia, a veces se tiene solo el código postal como dato fiable, etc.)
 
+## Actualización de los datos
+Actualización 2023. Los datos procesados están creados a partir de fuentes oficiales: INE y CNIG (IGN), tan pronto el INE publicó en Internet los datos a enero de 2023 del Callejero de Censo Electoral, exactamente el día 9 de marzo de 2023. El procesado de datos se realizó el 26 de marzo, descargando también entonces los últimos datos del CNIG. Ver más información en el siguiente apartado [fuentes de datos](https://github.com/softline-informatica/softlinegeodb#fuentes-de-datos).
+
+Esta base de datos procesados se construye desde 2016 y ha sido actualizada en las siguientes fechas, si bien se publica en Github el 1 de mayo de 2023:
+Fecha|Comentario|
+|:---|:---|
+|19 de marzo de 2023|Actualización con datos 2023|
+|1 de enero de 2021|Actualización con datos 2020|
+|15 de junio de 2019|Actualización con datos 2019|
+|27 de mayo de 2018|Actualización con datos 2018, 1ª versión con tabla entidades_geo|
+|20 de agosto de 2017|Actualización con datos 2017, 1ª versión con tabla de países|
+|2 de mayo de 2016|1ª versión de las tablas con datos 2016 del INE y CNIG/IGN|
+
 ## Fuentes de datos
 INE - Instituto Nacional de Estadística, que mantiene los datos de municipios / provincias / comunidades autónomas y el callejero del censo electoral con sus códigos postales.
 
 CNIG - Centro Nacional de Información Geográfica, dirigido por el IGN (Instituto Geográfico Nacional), que mantiene diversos conjuntos de datos geográficos.
+
+### Contraste de los datos
+En mayo de 2023 se contrastó la fiabilidad de los datos de códigos postales: la tabla "municipios_cp" de este proyecto -que relaciona los códigos postales con los municipios- se chequeó contra los datos CSV generados por [este otro proyecto similar de Íñigo Flores](https://github.com/inigoflores/ds-codigos-postales-ine-es). La comparación fue exacta para los datos de 2023-1 (Enero).
 
 ## Tablas
 La versión de datos _mínima_ consta de 7 tablas:
@@ -88,3 +108,5 @@ De aquí obtendremos información geográfica de un ID municipio dado.
 
 ![Estructura de la tabla "ine_municipios_geo" (Información geográfica de los Municipios españoles)](/images/softlinegeodb_ine_municipios_geo-struct.png)
 
+### En proyecto
+Asociación de todos los núcleos de población del CNIG con el padrón municipal, para asociar nº de habitantes y posición geográfica de todos los "CUN" y no solo municipios.
