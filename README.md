@@ -65,11 +65,10 @@ CNIG - Centro Nacional de Información Geográfica, dirigido por el IGN (Institu
 En mayo de 2023 se contrastó la fiabilidad de los datos de códigos postales: la tabla "municipios_cp" de este proyecto -que relaciona los códigos postales con los municipios- se chequeó contra los datos CSV generados por [este otro proyecto similar de Íñigo Flores](https://github.com/inigoflores/ds-codigos-postales-ine-es). La comparación fue exacta para los datos de 2023-1 (Enero).
 
 ## Tablas
+
 La versión de datos _mínima_ consta de 7 tablas.
 
 ![Tablas versión minimalista de softlinegeodb](/images/softlinegeodb_tables2023.png)
-
-La versión de datos extra incluye datos procesados del callejero del INE y las entidades poblacionales adicionales e información geográfica extra del CNIG, todo asociado a los ID de municipio, pero su uso es más raro y ocupan mucho más espacio (son cientos de miles de filas).
 
 ### Definición de los IDs en las tablas
 
@@ -79,6 +78,7 @@ La versión de datos extra incluye datos procesados del callejero del INE y las 
 |id_provincia|Provincia|Número del 1 al 52, sin cero inicial, basta 1 byte y por eso el tipo de dato es TINYINT UNSIGNED|
 |id_municipio|Municipio|Para poder identificar un municipio por un número, y almacenarlo como un tipo númerico, sin ceros iniciales (al contrario que el INE), lo que hacemos es prefijar el "id_ccaa" (Comunidad Autónoma) y seguir el patrón del INE: dos cifras del 01 al 52 para la provincia, y 3 cifras para el código de municipio, del 001 al 999. De esta manera nos bastan 3 bytes para referenciar un municipio de forma única (tipo MEDIUMINT UNSIGNED) y además podemos obtener la Comunidad Autónoma leyendo hacia atrás el ID municipio.<br /> **Por ejemplo** el código municipio de PALMA DE MALLORCA en el INE sería **07040** (provincia 07, municipio 040). En nuestra base de datos se queda como **407040** ya que el código 4 es la comunidad autónoma de las Islas Baleares.<br />La ciudad de Valencia, cuyo código de municipio INE es **46250** (46 código provincia, 250 código de municipio), se queda como **1046250** ya que 10 es el ID de Comunidad Autónoma.
 
+La versión de datos extra incluye datos procesados del callejero del INE y las entidades poblacionales adicionales e información geográfica extra del CNIG, todo asociado a los ID de municipio, pero su uso es más raro y ocupan mucho más espacio (son cientos de miles de filas).
 
 ![Tablas extra de la versión full de softlinegeodb](/images/softlinegeodb_tables-extra2023.png)
 
