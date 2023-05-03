@@ -8,7 +8,7 @@ Conjunto de datos actualizado en **formato base de datos MySQL** de la organizac
 Para los impacientes:
 
 * Descargar el [archivo 7z](https://github.com/softline-informatica/softlinegeodb/blob/main/softlinegeodb-spain-minimal-db.sql.7z) (comprimido con [7-zip](https://www.7-zip.org/)) que contiene los volcados SQL (_dumps_) de las tablas mínimas. Las tablas adicionales se publicarán en una próxima versión.
-* Echa un vistazo a [las tablas](https://github.com/softline-informatica/softlinegeodb#tablas) y definición de IDs.
+* Echa un vistazo a [LA ESTRUCTURA DE LAS TABLAS](https://github.com/softline-informatica/softlinegeodb#las-tablas) y definición de IDs.
 * Hay municipios con código postal único, municipios que tienen varios códigos postales y también existen municipios que comparten un mismo código postal.
 * Probado en MariaDB 10.11.2, 10.1, 10.5 y 10.6 aunque por la simplicidad de las tablas debería ser compatible con versiones anteriores y MySQL 5 y 8.
 * Usado en aplicaciones reales utilizadas diariamente con entradas de datos dependientes de códigos postales, provincias, municipios...
