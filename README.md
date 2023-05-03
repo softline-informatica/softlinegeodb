@@ -1,5 +1,5 @@
 # SOFT LINE Geo DB
-Conjunto de datos actualizado en **formato base de datos MySQL** de la organización territorial española (comunidades, provincias, municipios, comarcas y otras entidades de población), incluyendo códigos postales e información geográfica, con tablas optimizadas para consultas rápidas, mínimo espacio posible de los registros relacionados y uso fácil.
+Conjunto de datos actualizado en **formato base de datos MySQL** de la organización territorial española (comunidades, provincias, municipios, comarcas y otras entidades de población), incluyendo códigos postales e información geográfica, con tablas optimizadas para consultas rápidas, mínimo espacio posible de los registros relacionados y uso fácil.<br/>Gestionado por [SOFT LINE Informática](https://www.softline.es/web/).
 
 ![Obtener provincia y municipio por codigo postal](/images/softlinegeodb-resolver.gif) ![Muestra mapa político de España](/images/softlinegeodb-spain-demomap-peq.png)
 
@@ -15,7 +15,7 @@ Para los impacientes:
 
 ## Demos
 
-En la [página de Demos](https://github.com/softline-informatica/softlinegeodb/blob/main/DEMOS.md) encontrarás algunas de las cosas interesantes que podemos hacer con **Soft Line Geo DB**
+En la [página de Demos](https://github.com/softline-informatica/softlinegeodb/blob/main/DEMOS.md) encontrarás algunas de las cosas interesantes que podemos hacer con **Soft Line Geo DB**. ![Obtener provincia y municipio por codigo postal](/images/softline-informatica.png)
 
 ## Los datos
 
@@ -92,33 +92,33 @@ La versión de datos extra incluye datos procesados del callejero del INE y las 
 
 ![Tablas extra de la versión full de softlinegeodb](/images/softlinegeodb_tables-extra2023.png)
 
-### softlinegeodb_ine_ccaa
+### Tabla 'softlinegeodb_ine_ccaa'
 Las 19 autonomías (por unificar: CCAA o Comunidades Autónomas) con las ciudades autónomas de Ceuta y Melilla.
 
 ![Estructura de la tabla "ine_ccaa" (Comunidades autónomas españolas)](/images/softlinegeodb_ine_ccaa-struct.png)
 ![Datos de la tabla "ine_ccaa"](/images/softlinegeodb_ine_ccaa-data.png)
 
-### softlinegeodb_ine_provincias
+### Tabla 'softlinegeodb_ine_provincias'
 Cada provincia pertenece a una Comunidad Autónoma ("ccaa") y se indica el municipio que es la capital de la provincia. Existe además un nombre, nombre corto y nombre alternativo.
 
 ![Estructura de la tabla "ine_provincias" (Provincias españolas)](/images/softlinegeodb_ine_provincias-struct.png)
 
-### softlinegeodb_ine_islas
+### Tabla 'softlinegeodb_ine_islas'
 Permite asociar las 11 islas de entidad en España con su provincia, pues las islas Canarias se agrupan en 2 provincias.
 
 ![Estructura de la tabla "ine_islas" (Islas españolas)](/images/softlinegeodb_ine_islas-struct.png)
 
-### softlinegeodb_ine_municipios
+### Tabla 'softlinegeodb_ine_municipios'
 Cada municipio tiene el ID de su Comunidad Autónoma ("ccaa") y Provincia "id_provincia". El ID de isla será distinto de 0 si procede.
 
 ![Estructura de la tabla "ine_municipios" (Municipios de España)](/images/softlinegeodb_ine_municipios-struct.png)
 
-### softlinegeodb_ine_municipios_cp
+### Tabla 'softlinegeodb_ine_municipios_cp'
 De esta tabla podemos extraer a qué municipio(s) pertenece un código postal. Algunos códigos postales están compartidos entre 2 municipios o más y un municipio puede tener uno o varios códigos postales.
 
 ![Estructura de la tabla "ine_municipios_cp" (Códigos postales a municipios españoles)](/images/softlinegeodb_ine_municipios_cp-struct.png)
 
-### softlinegeodb_ine_municipios_geo
+### Tabla 'softlinegeodb_ine_municipios_geo'
 De aquí obtendremos información geográfica de un ID municipio dado, incluyendo latitud/longitud del centroide del municipio, nº de habitantes, etc.
 
 ![Estructura de la tabla "ine_municipios_geo" (Información geográfica de los Municipios españoles)](/images/softlinegeodb_ine_municipios_geo-struct.png)
@@ -140,11 +140,11 @@ El siguiente artículo de _Pablo Barrachina_ es el que motivó la creación de "
 
 - 2017: [Base de Datos de Códigos Postales](https://postal.cat/index.es.html) de **_Javier Casares_**, volcado en CSV, Excel y SQL, pero sin fuentes contrastables. Indica: "La información de este sitio recoge datos de Correos, Google Maps, Códigos Postales y otras fuentes. La información puede no ser exacta." - Actualizado en 2019.
 
-- 2019: [Petición formal (42 solicitantes) a “Datos abiertos” del Gobierno (datos.gob.es) de una “Base de delimitaciones de los CODIGOS POSTALES DE ESPAÑA”](https://datos.gob.es/es/peticiones-datos/base-de-delimitaciones-de-los-codigos-postales-de-espana). Estado: “No viable” - La base de delimitaciones de códigos postales actualmente está sujeta a comercialización.
+- 2019: [Petición formal (42 solicitantes) a “Datos abiertos” del Gobierno (datos.gob.es) de una “Base de delimitaciones de los CODIGOS POSTALES DE ESPAÑA”](https://datos.gob.es/es/peticiones-datos/base-de-delimitaciones-de-los-codigos-postales-de-espana). **Estado: “No viable”.** "La base de delimitaciones de códigos postales actualmente está sujeta a comercialización". Se refieren a Correos.
 
 - 2022: [Dataset que proporciona un listado de todos los códigos postales de España asociados a los municipios y unidades poblacionales](https://github.com/inigoflores/ds-codigos-postales-ine-es) de **_Íñigo Flores_**, usa como fuente el Callejero del Censo Electoral (del INE).
 
-El siguiente es un fantástico trabajo de _Francisco Goerlich_ y es casi un tratado en códigos postales. Para los interesados en obtener cartografía actualizada de los códigos postales en España:<br />
+El siguiente es un fantástico trabajo de _Francisco Goerlich_ y es prácticamente un tratado sobre códigos postales. Para los interesados en obtener **cartografía actualizada** de los códigos postales en España:<br />
 - 2022: [Elaboración de un mapa de Códigos Postales de España con recursos libres](https://www.uv.es/goerlich/Ivie/CodPost.html) de **_Francisco Goerlich_ (Universidad de Valencia e Ivie)**
 
 2023: [Publicación de "Soft Line Geo DB" en GitHub](https://github.com/softline-informatica/softlinegeodb)
@@ -153,7 +153,7 @@ El siguiente es un fantástico trabajo de _Francisco Goerlich_ y es casi un trat
 
 ### Créditos y licencia
 
-"Soft Line GeoDB" es un trabajo de _Juan Gabriel Covas_ para **SOFT LINE Informática**. 2016 - 2023<br />
+"Soft Line GeoDB" es un trabajo de _Juan Gabriel Covas_ para **[SOFT LINE Informática](https://www.softline.es/web/)**. 2016 - 2023<br />
 Basado en el artículo de 2013: [Relacionar el Código INE con su Código Postal](http://switchoffandletsgo.blogspot.com/2013/04/relacionar-el-codigo-ine-con-su-codigo.html) de _Pablo Barrachina_
 
 [Licencia GPL-3.0](https://github.com/softline-informatica/softlinegeodb/blob/main/LICENSE)<br />
