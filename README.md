@@ -15,7 +15,7 @@ Para los impacientes:
 
 ## Demos
 
-En la [página de Demos](https://github.com/softline-informatica/softlinegeodb/blob/main/DEMOS.md) encontrarás algunas de las cosas interesantes que podemos hacer con **Soft Line Geo DB**. ![Obtener provincia y municipio por codigo postal](/images/softline-informatica.png)
+En la [página de Demos](https://github.com/softline-informatica/softlinegeodb/blob/main/DEMOS.md) encontrarás algunas de las cosas interesantes que podemos hacer con **Soft Line Geo DB**. ![Logo softline informática](/images/sl-square.png.png)
 
 ## Los datos
 
