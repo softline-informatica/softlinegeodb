@@ -17,6 +17,8 @@ Para los impacientes:
 
 En la [página de Demos](https://github.com/softline-informatica/softlinegeodb/blob/main/DEMOS.md) encontrarás algunas de las cosas interesantes que podemos hacer con **Soft Line Geo DB**. ![Logo softline informática](/images/sl-square.png)
 
+<br />
+
 ## Los datos
 
 Países|250|
@@ -118,6 +120,8 @@ De esta tabla podemos extraer a qué municipio(s) pertenece un código postal. A
 
 ![Estructura de la tabla "ine_municipios_cp" (Códigos postales a municipios españoles)](/images/softlinegeodb_ine_municipios_cp-struct.png)
 
+
+
 ### Tabla 'softlinegeodb_ine_municipios_geo'
 De aquí obtendremos información geográfica de un ID municipio dado, incluyendo latitud/longitud del centroide del municipio, nº de habitantes, etc.
 
@@ -155,6 +159,7 @@ Asociación de todos los núcleos de población del CNIG con el padrón municipa
 ### Créditos y licencia
 
 "Soft Line GeoDB" es un trabajo de _Juan Gabriel Covas_ para **[SOFT LINE Informática](https://www.softline.es/web/)**. 2016 - 2023<br />
+Contacto por mail: jgcovas _at domain_ softline.es<br />
 Basado en el artículo de 2013: [Relacionar el Código INE con su Código Postal](http://switchoffandletsgo.blogspot.com/2013/04/relacionar-el-codigo-ine-con-su-codigo.html) de _Pablo Barrachina_
 
 [Licencia GPL-3.0](https://github.com/softline-informatica/softlinegeodb/blob/main/LICENSE)<br />

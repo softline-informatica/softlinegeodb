@@ -1,0 +1,19 @@
+
+RewriteEngine On
+
+# Rewrite everything that is not a real file or directory on the server to index.php.
+# Be sure you create a robots.txt file so that does not get redirected when webcrawlers visit.
+# Also create a favicon.ico file so browsers don't get a redirect when trying to load a favicon.
+
+
+# if index.php is loaded through: localhost/softlinegeodb/src-php-import-script/, 
+#          RewriteBase should be: /softlinegeodb/src-php-import-script/
+# if index.php is located at localhost/softlinegeodb, this should be 
+#          RewriteBase should be: /softlinegeodb/
+# if index.php is located at localhost (root dir), this should be 
+#          RewriteBase should be: /
+
+RewriteBase /softlinegeodb/github/softlinegeodb/src/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
