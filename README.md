@@ -128,26 +128,27 @@ Asociación de todos los núcleos de población del CNIG con el padrón municipa
 
 # Referencias y Línea de tiempo
 
-La base de datos de códigos postales oficial de Correos siempre ha sido de pago, y desde hace un tiempo ofrece varias versiones. Los precios van desde 800 € a 5.000 €<br />
-- 2013: [Correos: Base de datos (de pago) de códigos postales](https://www.correos.es/es/es/empresas/marketing/identifica-a-tus-clientes-potenciales/base-de-datos-de-codigos-postales)
+- **2013**: La base de datos de códigos postales oficial de Correos siempre ha sido de pago, y desde hace un tiempo ofrece varias versiones. Los precios van desde 800 € a 5.000 €<br />
+[Correos: Base de datos (de pago) de códigos postales](https://www.correos.es/es/es/empresas/marketing/identifica-a-tus-clientes-potenciales/base-de-datos-de-codigos-postales)
 
-El siguiente artículo de _Pablo Barrachina_ es el que motivó la creación de "softlinegeodb" en 2016:<br />
-- 2013: [Relacionar el Código INE con su Código Postal](http://switchoffandletsgo.blogspot.com/2013/04/relacionar-el-codigo-ine-con-su-codigo.html) de **_Pablo Barrachina_**
+- **2013**: El siguiente artículo de _Pablo Barrachina_ es el que motivó la creación de "softlinegeodb" en 2016:<br />
+[Relacionar el Código INE con su Código Postal](http://switchoffandletsgo.blogspot.com/2013/04/relacionar-el-codigo-ine-con-su-codigo.html) de **_Pablo Barrachina_**
 
-- 2016: Primera versión (interna) de "Soft Line Geo DB", de **_Juan Gabriel Covas_** para SOFT LINE Informática
+- **2016**: Primera versión (interna) de "Soft Line Geo DB", de **_Juan Gabriel Covas_** para SOFT LINE Informática
 
-- 2017: [Relación de códigos postales de España](https://github.com/inigoflores/ds-codigos-postales) de **_Iñigo Flores_** junto el código INE del municipio al que pertenecen, con las geometrías asociadas a cada código postal en formato .geojson
+- **2017**: [Relación de códigos postales de España](https://github.com/inigoflores/ds-codigos-postales) de **_Iñigo Flores_** junto el código INE del municipio al que pertenecen, con las geometrías asociadas a cada código postal en formato .geojson
 
-- 2017: [Base de Datos de Códigos Postales](https://postal.cat/index.es.html) de **_Javier Casares_**, volcado en CSV, Excel y SQL, pero sin fuentes contrastables. Indica: "La información de este sitio recoge datos de Correos, Google Maps, Códigos Postales y otras fuentes. La información puede no ser exacta." - Actualizado en 2019.
+- **2017**: [Base de Datos de Códigos Postales](https://postal.cat/index.es.html) de **_Javier Casares_**, volcado en CSV, Excel y SQL, pero sin fuentes contrastables. Indica: "La información de este sitio recoge datos de Correos, Google Maps, Códigos Postales y otras fuentes. La información puede no ser exacta." - Actualizado en 2019.
 
-- 2019: [Petición formal (42 solicitantes) a “Datos abiertos” del Gobierno (datos.gob.es) de una “Base de delimitaciones de los CODIGOS POSTALES DE ESPAÑA”](https://datos.gob.es/es/peticiones-datos/base-de-delimitaciones-de-los-codigos-postales-de-espana). **Estado: “No viable”.** "La base de delimitaciones de códigos postales actualmente está sujeta a comercialización". Se refieren a Correos.
+- **2019**: [Petición formal (42 solicitantes) a “Datos abiertos” del Gobierno (datos.gob.es) de una “Base de delimitaciones de los CODIGOS POSTALES DE ESPAÑA”](https://datos.gob.es/es/peticiones-datos/base-de-delimitaciones-de-los-codigos-postales-de-espana). **Estado: No viable.** _"La base de delimitaciones de códigos postales actualmente está sujeta a comercialización"_. Se refieren a Correos.
 
-- 2022: [Dataset que proporciona un listado de todos los códigos postales de España asociados a los municipios y unidades poblacionales](https://github.com/inigoflores/ds-codigos-postales-ine-es) de **_Íñigo Flores_**, usa como fuente el Callejero del Censo Electoral (del INE).
+- **2022**: [Dataset que proporciona un listado de todos los códigos postales de España asociados a los municipios y unidades poblacionales](https://github.com/inigoflores/ds-codigos-postales-ine-es) de **_Íñigo Flores_**, usa como fuente el Callejero del Censo Electoral (del INE).
 
-El siguiente es un fantástico trabajo de _Francisco Goerlich_ y es prácticamente un tratado sobre códigos postales. Para los interesados en obtener **cartografía actualizada** de los códigos postales en España:<br />
-- 2022: [Elaboración de un mapa de Códigos Postales de España con recursos libres](https://www.uv.es/goerlich/Ivie/CodPost.html) de **_Francisco Goerlich_ (Universidad de Valencia e Ivie)**
 
-2023: [Publicación de "Soft Line Geo DB" en GitHub](https://github.com/softline-informatica/softlinegeodb)
+- **2022**: El siguiente fantástico trabajo de _Francisco Goerlich_ es prácticamente un tratado sobre códigos postales. Para los interesados en obtener **cartografía actualizada** de los códigos postales en España:<br />
+ [Elaboración de un mapa de Códigos Postales de España con recursos libres](https://www.uv.es/goerlich/Ivie/CodPost.html) de **_Francisco Goerlich_ (Universidad de Valencia e Ivie)**
+
+- **2023**: [Publicación de "Soft Line Geo DB" en GitHub](https://github.com/softline-informatica/softlinegeodb)
 
 <br /><br />
 
