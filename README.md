@@ -8,7 +8,7 @@ Conjunto de datos actualizado en **formato base de datos MySQL** de la organizac
 Para los impacientes:
 
 * Descargar el [archivo 7z](https://github.com/softline-informatica/softlinegeodb/blob/main/softlinegeodb-spain-minimal-db.sql.7z) (comprimido con [7-zip](https://www.7-zip.org/)) que contiene los volcados SQL (_dumps_) de las tablas mínimas. Las tablas adicionales se publicarán en una próxima versión.
-* Echa un vistazo a [LA ESTRUCTURA DE LAS TABLAS](https://github.com/softline-informatica/softlinegeodb#las-tablas) y definición de IDs.
+* Echa un vistazo a [las tablas](https://github.com/softline-informatica/softlinegeodb#tablas) y definición de IDs.
 * Hay municipios con código postal único, municipios que tienen varios códigos postales y también existen municipios que comparten un mismo código postal.
 * Probado en MariaDB 10.11.2, 10.1, 10.5 y 10.6 aunque por la simplicidad de las tablas debería ser compatible con versiones anteriores y MySQL 5 y 8.
 * Usado en aplicaciones reales utilizadas diariamente con entradas de datos dependientes de códigos postales, provincias, municipios...
@@ -142,7 +142,7 @@ Asociación de todos los núcleos de población del CNIG con el padrón municipa
 
 - **2017**: [Relación de códigos postales de España](https://github.com/inigoflores/ds-codigos-postales) de **_Iñigo Flores_** junto el código INE del municipio al que pertenecen, con las geometrías asociadas a cada código postal en formato .geojson
 
-- **2017**: [Base de Datos de Códigos Postales](https://postal.cat/index.es.html) de **_Javier Casares_**, volcado en CSV, Excel y SQL, pero sin fuentes contrastables. Indica: "La información de este sitio recoge datos de Correos, Google Maps, Códigos Postales y otras fuentes. La información puede no ser exacta." - Actualizado en 2019.
+- **2017**: [Base de Datos de Códigos Postales](https://postal.cat/index.es.html) de **_Javier Casares_**, volcado en CSV, Excel y SQL, pero sin fuentes contrastables. Indica: "La información de este sitio recoge datos de Correos, Google Maps, Códigos Postales y otras fuentes. La información puede no ser exacta". Actualizado en 2019.
 
 - **2019**: [Petición formal (42 solicitantes) a “Datos abiertos” del Gobierno (datos.gob.es) de una “Base de delimitaciones de los CODIGOS POSTALES DE ESPAÑA”](https://datos.gob.es/es/peticiones-datos/base-de-delimitaciones-de-los-codigos-postales-de-espana). **Estado: No viable.** _"La base de delimitaciones de códigos postales actualmente está sujeta a comercialización"_. Se refieren a Correos.
 
