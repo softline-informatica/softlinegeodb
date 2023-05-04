@@ -146,11 +146,11 @@ Asociación de todos los núcleos de población del CNIG con el padrón municipa
 
 - **2019**: [Petición formal (42 solicitantes) a “Datos abiertos” del Gobierno (datos.gob.es) de una “Base de delimitaciones de los CODIGOS POSTALES DE ESPAÑA”](https://datos.gob.es/es/peticiones-datos/base-de-delimitaciones-de-los-codigos-postales-de-espana). **Estado: No viable.** _"La base de delimitaciones de códigos postales actualmente está sujeta a comercialización"_. Se refieren a Correos.
 
-- **2022**: [Dataset que proporciona un listado de todos los códigos postales de España asociados a los municipios y unidades poblacionales](https://github.com/inigoflores/ds-codigos-postales-ine-es) de **_Íñigo Flores_**, usa como fuente el Callejero del Censo Electoral (del INE).
+- **2022**: [Conjunto de datos con todos los códigos postales de España asociados a los municipios y unidades poblacionales](https://github.com/inigoflores/ds-codigos-postales-ine-es) de **_Íñigo Flores_**, usa como fuente el Callejero del Censo Electoral (del INE).
 
-
-- **2022**: El siguiente fantástico trabajo de _Francisco Goerlich_ es prácticamente un tratado sobre códigos postales. Para los interesados en obtener **cartografía actualizada** de los códigos postales en España:<br />
- [Elaboración de un mapa de Códigos Postales de España con recursos libres](https://www.uv.es/goerlich/Ivie/CodPost.html) de **_Francisco Goerlich_ (Universidad de Valencia e Ivie)**
+- **2022**: Este fantástico trabajo de _Francisco Goerlich_ es prácticamente un tratado sobre códigos postales. Para los interesados en obtener **cartografía actualizada** de los códigos postales en España:<br />
+ [Elaboración de un mapa de códigos postales de España con recursos libres. Cómo evitar pagar por disponer de información de referencia](https://www.uv.es/goerlich/Ivie/CodPost.html) de **_Francisco Goerlich_ (Universidad de Valencia e IVIE: Instituto Valenciano de Investigaciones Económicas)**<br />
+ ([Trabajo en PDF](http://doi.org/10.12842/WPIVIE_0322)) [Página del trabajo en IVIE](https://www.ivie.es/en_US/investigacion/publicaciones/documento/2022-3-elaboracion-de-un-mapa-de-codigos-postales-de-espana-con-recursos-libres-como-evitar-pagar-por-disponer-de-informacion-de-referencia/).
 
 - **2023**: [Publicación de "Soft Line Geo DB" en GitHub](https://github.com/softline-informatica/softlinegeodb)
 
