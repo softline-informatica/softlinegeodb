@@ -1,5 +1,5 @@
 # SOFT LINE Geo DB
-Conjunto de datos actualizado en **formato base de datos MySQL** de la organización territorial española (comunidades, provincias, municipios, comarcas y otras entidades de población), incluyendo códigos postales e información geográfica, con tablas optimizadas para consultas rápidas, mínimo espacio posible de los registros relacionados y uso fácil. <br/> Gestionado por _[SOFT LINE Informática](https://www.softline.es/web/)_.
+Conjunto de datos actualizado en **formato base de datos MySQL** de la organización territorial española (comunidades, provincias, municipios, comarcas y otras entidades de población), incluyendo códigos postales e información geográfica, con tablas optimizadas para consultas rápidas, mínimo espacio posible de los registros relacionados y uso fácil. <img src="/images/softlinegeodb.jpg" align="right" width="240" />
 
 ![Obtener provincia y municipio por codigo postal](/images/softlinegeodb-resolver.gif) ![Muestra mapa político de España](/images/softlinegeodb-spain-demomap-peq.png)
 
@@ -15,7 +15,7 @@ Para los impacientes:
 
 ## Demos
 
-En la [página de Demos](https://github.com/softline-informatica/softlinegeodb/blob/main/DEMOS.md) encontrarás algunas de las cosas interesantes que podemos hacer con **Soft Line Geo DB**. ![Logo softline informática](/images/sl-square.png)
+En la [página de Demos](https://github.com/softline-informatica/softlinegeodb/blob/main/DEMOS.md) encontrarás algunas de las cosas interesantes que podemos hacer con **Soft Line Geo DB**.
 
 <br />
 
